@@ -1,7 +1,6 @@
 #!/bin/bash -x
 
 echo "Welcome Employee for attendence"
-
 #Employee attendance
 Attendance(){
 	attendance=$((RANDOM % 2))
@@ -76,3 +75,6 @@ then
 else
 	echo "Month wage:"$MONTH_WAGE
 fi
+#Get the Working hours
+echo "Monthly Wage hours: $HOURS"
+echo "Part time wage hours: $(($HOURS / 2))"
